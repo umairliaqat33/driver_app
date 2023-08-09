@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Switch_Driver</string>
+    <string name="facebook_app_id">725214202565176</string>
+    <string name="fb_login_protocol_scheme">fb725214202565176</string>
+    <string name="facebook_client_token">4f0c3c71de38ef9770d2e2d17c7caac4</string>
+</resources>

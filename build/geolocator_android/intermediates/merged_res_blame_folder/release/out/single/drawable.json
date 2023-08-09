@@ -1,0 +1,74 @@
+[
+    {
+        "merged": "/home/umair-liaqat-552/StudioProjects/driver_app/build/geolocator_android/intermediates/merged_res/release/drawable/common_google_signin_btn_icon_dark_normal.xml",
+        "source": "/home/umair-liaqat-552/.gradle/caches/transforms-3/28227dfaf4fb370352c7c3385ec25021/transformed/jetified-play-services-base-18.1.0/res/drawable/common_google_signin_btn_icon_dark_normal.xml"
+    },
+    {
+        "merged": "/home/umair-liaqat-552/StudioProjects/driver_app/build/geolocator_android/intermediates/merged_res/release/drawable/common_google_signin_btn_text_disabled.xml",
+        "source": "/home/umair-liaqat-552/.gradle/caches/transforms-3/28227dfaf4fb370352c7c3385ec25021/transformed/jetified-play-services-base-18.1.0/res/drawable/common_google_signin_btn_text_disabled.xml"
+    },
+    {
+        "merged": "/home/umair-liaqat-552/StudioProjects/driver_app/build/geolocator_android/intermediates/merged_res/release/drawable/common_google_signin_btn_text_dark_focused.xml",
+        "source": "/home/umair-liaqat-552/.gradle/caches/transforms-3/28227dfaf4fb370352c7c3385ec25021/transformed/jetified-play-services-base-18.1.0/res/drawable/common_google_signin_btn_text_dark_focused.xml"
+    },
+    {
+        "merged": "/home/umair-liaqat-552/StudioProjects/driver_app/build/geolocator_android/intermediates/merged_res/release/drawable/common_google_signin_btn_text_light_normal.xml",
+        "source": "/home/umair-liaqat-552/.gradle/caches/transforms-3/28227dfaf4fb370352c7c3385ec25021/transformed/jetified-play-services-base-18.1.0/res/drawable/common_google_signin_btn_text_light_normal.xml"
+    },
+    {
+        "merged": "/home/umair-liaqat-552/StudioProjects/driver_app/build/geolocator_android/intermediates/merged_res/release/drawable/notification_tile_bg.xml",
+        "source": "/home/umair-liaqat-552/.gradle/caches/transforms-3/3be1c84ba3978673562f295cdead12c4/transformed/core-1.9.0/res/drawable/notification_tile_bg.xml"
+    },
+    {
+        "merged": "/home/umair-liaqat-552/StudioProjects/driver_app/build/geolocator_android/intermediates/merged_res/release/drawable/common_google_signin_btn_icon_light.xml",
+        "source": "/home/umair-liaqat-552/.gradle/caches/transforms-3/28227dfaf4fb370352c7c3385ec25021/transformed/jetified-play-services-base-18.1.0/res/drawable/common_google_signin_btn_icon_light.xml"
+    },
+    {
+        "merged": "/home/umair-liaqat-552/StudioProjects/driver_app/build/geolocator_android/intermediates/merged_res/release/drawable/common_google_signin_btn_icon_light_normal.xml",
+        "source": "/home/umair-liaqat-552/.gradle/caches/transforms-3/28227dfaf4fb370352c7c3385ec25021/transformed/jetified-play-services-base-18.1.0/res/drawable/common_google_signin_btn_icon_light_normal.xml"
+    },
+    {
+        "merged": "/home/umair-liaqat-552/StudioProjects/driver_app/build/geolocator_android/intermediates/merged_res/release/drawable/common_google_signin_btn_text_dark_normal.xml",
+        "source": "/home/umair-liaqat-552/.gradle/caches/transforms-3/28227dfaf4fb370352c7c3385ec25021/transformed/jetified-play-services-base-18.1.0/res/drawable/common_google_signin_btn_text_dark_normal.xml"
+    },
+    {
+        "merged": "/home/umair-liaqat-552/StudioProjects/driver_app/build/geolocator_android/intermediates/merged_res/release/drawable/common_google_signin_btn_text_light.xml",
+        "source": "/home/umair-liaqat-552/.gradle/caches/transforms-3/28227dfaf4fb370352c7c3385ec25021/transformed/jetified-play-services-base-18.1.0/res/drawable/common_google_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "/home/umair-liaqat-552/StudioProjects/driver_app/build/geolocator_android/intermediates/merged_res/release/drawable/notification_bg.xml",
+        "source": "/home/umair-liaqat-552/.gradle/caches/transforms-3/3be1c84ba3978673562f295cdead12c4/transformed/core-1.9.0/res/drawable/notification_bg.xml"
+    },
+    {
+        "merged": "/home/umair-liaqat-552/StudioProjects/driver_app/build/geolocator_android/intermediates/merged_res/release/drawable/common_google_signin_btn_icon_dark.xml",
+        "source": "/home/umair-liaqat-552/.gradle/caches/transforms-3/28227dfaf4fb370352c7c3385ec25021/transformed/jetified-play-services-base-18.1.0/res/drawable/common_google_signin_btn_icon_dark.xml"
+    },
+    {
+        "merged": "/home/umair-liaqat-552/StudioProjects/driver_app/build/geolocator_android/intermediates/merged_res/release/drawable/common_google_signin_btn_icon_disabled.xml",
+        "source": "/home/umair-liaqat-552/.gradle/caches/transforms-3/28227dfaf4fb370352c7c3385ec25021/transformed/jetified-play-services-base-18.1.0/res/drawable/common_google_signin_btn_icon_disabled.xml"
+    },
+    {
+        "merged": "/home/umair-liaqat-552/StudioProjects/driver_app/build/geolocator_android/intermediates/merged_res/release/drawable/notification_bg_low.xml",
+        "source": "/home/umair-liaqat-552/.gradle/caches/transforms-3/3be1c84ba3978673562f295cdead12c4/transformed/core-1.9.0/res/drawable/notification_bg_low.xml"
+    },
+    {
+        "merged": "/home/umair-liaqat-552/StudioProjects/driver_app/build/geolocator_android/intermediates/merged_res/release/drawable/common_google_signin_btn_icon_dark_focused.xml",
+        "source": "/home/umair-liaqat-552/.gradle/caches/transforms-3/28227dfaf4fb370352c7c3385ec25021/transformed/jetified-play-services-base-18.1.0/res/drawable/common_google_signin_btn_icon_dark_focused.xml"
+    },
+    {
+        "merged": "/home/umair-liaqat-552/StudioProjects/driver_app/build/geolocator_android/intermediates/merged_res/release/drawable/common_google_signin_btn_text_dark.xml",
+        "source": "/home/umair-liaqat-552/.gradle/caches/transforms-3/28227dfaf4fb370352c7c3385ec25021/transformed/jetified-play-services-base-18.1.0/res/drawable/common_google_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "/home/umair-liaqat-552/StudioProjects/driver_app/build/geolocator_android/intermediates/merged_res/release/drawable/common_google_signin_btn_text_light_focused.xml",
+        "source": "/home/umair-liaqat-552/.gradle/caches/transforms-3/28227dfaf4fb370352c7c3385ec25021/transformed/jetified-play-services-base-18.1.0/res/drawable/common_google_signin_btn_text_light_focused.xml"
+    },
+    {
+        "merged": "/home/umair-liaqat-552/StudioProjects/driver_app/build/geolocator_android/intermediates/merged_res/release/drawable/common_google_signin_btn_icon_light_focused.xml",
+        "source": "/home/umair-liaqat-552/.gradle/caches/transforms-3/28227dfaf4fb370352c7c3385ec25021/transformed/jetified-play-services-base-18.1.0/res/drawable/common_google_signin_btn_icon_light_focused.xml"
+    },
+    {
+        "merged": "/home/umair-liaqat-552/StudioProjects/driver_app/build/geolocator_android/intermediates/merged_res/release/drawable/notification_icon_background.xml",
+        "source": "/home/umair-liaqat-552/.gradle/caches/transforms-3/3be1c84ba3978673562f295cdead12c4/transformed/core-1.9.0/res/drawable/notification_icon_background.xml"
+    }
+]

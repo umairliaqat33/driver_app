@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/home/umair-liaqat-552/StudioProjects/driver_app/build/google_sign_in_android/intermediates/merged_res/release/drawable-watch-v20/common_google_signin_btn_text_disabled.xml",
+        "source": "/home/umair-liaqat-552/.gradle/caches/transforms-3/3ef1a337cc5460c89cd7cfde721736d6/transformed/jetified-play-services-auth-20.4.1/res/drawable-watch-v20/common_google_signin_btn_text_disabled.xml"
+    },
+    {
+        "merged": "/home/umair-liaqat-552/StudioProjects/driver_app/build/google_sign_in_android/intermediates/merged_res/release/drawable-watch-v20/common_google_signin_btn_text_dark_normal.xml",
+        "source": "/home/umair-liaqat-552/.gradle/caches/transforms-3/3ef1a337cc5460c89cd7cfde721736d6/transformed/jetified-play-services-auth-20.4.1/res/drawable-watch-v20/common_google_signin_btn_text_dark_normal.xml"
+    },
+    {
+        "merged": "/home/umair-liaqat-552/StudioProjects/driver_app/build/google_sign_in_android/intermediates/merged_res/release/drawable-watch-v20/common_google_signin_btn_text_light_normal.xml",
+        "source": "/home/umair-liaqat-552/.gradle/caches/transforms-3/3ef1a337cc5460c89cd7cfde721736d6/transformed/jetified-play-services-auth-20.4.1/res/drawable-watch-v20/common_google_signin_btn_text_light_normal.xml"
+    }
+]

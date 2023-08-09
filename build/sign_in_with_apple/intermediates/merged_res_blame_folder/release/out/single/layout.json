@@ -1,0 +1,34 @@
+[
+    {
+        "merged": "/home/umair-liaqat-552/StudioProjects/driver_app/build/sign_in_with_apple/intermediates/merged_res/release/layout/browser_actions_context_menu_page.xml",
+        "source": "/home/umair-liaqat-552/.gradle/caches/transforms-3/2a8e9c7fc4122b6f67617e8aac025b76/transformed/browser-1.2.0/res/layout/browser_actions_context_menu_page.xml"
+    },
+    {
+        "merged": "/home/umair-liaqat-552/StudioProjects/driver_app/build/sign_in_with_apple/intermediates/merged_res/release/layout/notification_template_part_chronometer.xml",
+        "source": "/home/umair-liaqat-552/.gradle/caches/transforms-3/aa701b47cec244085d46a1a42fcc7fb9/transformed/core-1.6.0/res/layout/notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "/home/umair-liaqat-552/StudioProjects/driver_app/build/sign_in_with_apple/intermediates/merged_res/release/layout/notification_template_icon_group.xml",
+        "source": "/home/umair-liaqat-552/.gradle/caches/transforms-3/aa701b47cec244085d46a1a42fcc7fb9/transformed/core-1.6.0/res/layout/notification_template_icon_group.xml"
+    },
+    {
+        "merged": "/home/umair-liaqat-552/StudioProjects/driver_app/build/sign_in_with_apple/intermediates/merged_res/release/layout/browser_actions_context_menu_row.xml",
+        "source": "/home/umair-liaqat-552/.gradle/caches/transforms-3/2a8e9c7fc4122b6f67617e8aac025b76/transformed/browser-1.2.0/res/layout/browser_actions_context_menu_row.xml"
+    },
+    {
+        "merged": "/home/umair-liaqat-552/StudioProjects/driver_app/build/sign_in_with_apple/intermediates/merged_res/release/layout/notification_template_part_time.xml",
+        "source": "/home/umair-liaqat-552/.gradle/caches/transforms-3/aa701b47cec244085d46a1a42fcc7fb9/transformed/core-1.6.0/res/layout/notification_template_part_time.xml"
+    },
+    {
+        "merged": "/home/umair-liaqat-552/StudioProjects/driver_app/build/sign_in_with_apple/intermediates/merged_res/release/layout/notification_action.xml",
+        "source": "/home/umair-liaqat-552/.gradle/caches/transforms-3/aa701b47cec244085d46a1a42fcc7fb9/transformed/core-1.6.0/res/layout/notification_action.xml"
+    },
+    {
+        "merged": "/home/umair-liaqat-552/StudioProjects/driver_app/build/sign_in_with_apple/intermediates/merged_res/release/layout/custom_dialog.xml",
+        "source": "/home/umair-liaqat-552/.gradle/caches/transforms-3/aa701b47cec244085d46a1a42fcc7fb9/transformed/core-1.6.0/res/layout/custom_dialog.xml"
+    },
+    {
+        "merged": "/home/umair-liaqat-552/StudioProjects/driver_app/build/sign_in_with_apple/intermediates/merged_res/release/layout/notification_action_tombstone.xml",
+        "source": "/home/umair-liaqat-552/.gradle/caches/transforms-3/aa701b47cec244085d46a1a42fcc7fb9/transformed/core-1.6.0/res/layout/notification_action_tombstone.xml"
+    }
+]

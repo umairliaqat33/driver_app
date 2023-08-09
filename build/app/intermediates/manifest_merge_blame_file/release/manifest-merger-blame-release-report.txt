@@ -1,0 +1,654 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.driver_app"
+4    android:versionCode="30"
+5    android:versionName="0.0.30" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="22"
+8-->/home/umair-liaqat-552/StudioProjects/driver_app/android/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="33" />
+9-->/home/umair-liaqat-552/StudioProjects/driver_app/android/app/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->/home/umair-liaqat-552/StudioProjects/driver_app/android/app/src/main/AndroidManifest.xml:4:5-67
+11-->/home/umair-liaqat-552/StudioProjects/driver_app/android/app/src/main/AndroidManifest.xml:4:22-64
+12    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+12-->/home/umair-liaqat-552/StudioProjects/driver_app/android/app/src/main/AndroidManifest.xml:5:5-79
+12-->/home/umair-liaqat-552/StudioProjects/driver_app/android/app/src/main/AndroidManifest.xml:5:22-76
+13    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+13-->/home/umair-liaqat-552/StudioProjects/driver_app/android/app/src/main/AndroidManifest.xml:6:5-79
+13-->/home/umair-liaqat-552/StudioProjects/driver_app/android/app/src/main/AndroidManifest.xml:6:22-77
+14    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+14-->/home/umair-liaqat-552/StudioProjects/driver_app/android/app/src/main/AndroidManifest.xml:7:5-80
+14-->/home/umair-liaqat-552/StudioProjects/driver_app/android/app/src/main/AndroidManifest.xml:7:22-78
+15    <uses-permission android:name="android.permission.WAKE_LOCK" />
+15-->[:firebase_messaging] /home/umair-liaqat-552/StudioProjects/driver_app/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:10:5-68
+15-->[:firebase_messaging] /home/umair-liaqat-552/StudioProjects/driver_app/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:10:22-65
+16    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- Permissions options for the `notification` group -->
+16-->[:firebase_messaging] /home/umair-liaqat-552/StudioProjects/driver_app/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:11:5-79
+16-->[:firebase_messaging] /home/umair-liaqat-552/StudioProjects/driver_app/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:11:22-76
+17    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+17-->[:firebase_messaging] /home/umair-liaqat-552/StudioProjects/driver_app/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:13:5-77
+17-->[:firebase_messaging] /home/umair-liaqat-552/StudioProjects/driver_app/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:13:22-74
+18    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+18-->[:geolocator_android] /home/umair-liaqat-552/StudioProjects/driver_app/build/geolocator_android/intermediates/merged_manifest/release/AndroidManifest.xml:9:5-77
+18-->[:geolocator_android] /home/umair-liaqat-552/StudioProjects/driver_app/build/geolocator_android/intermediates/merged_manifest/release/AndroidManifest.xml:9:22-74
+19
+20    <queries>
+20-->[:file_picker] /home/umair-liaqat-552/StudioProjects/driver_app/build/file_picker/intermediates/merged_manifest/release/AndroidManifest.xml:11:5-17:15
+21        <intent>
+21-->[:file_picker] /home/umair-liaqat-552/StudioProjects/driver_app/build/file_picker/intermediates/merged_manifest/release/AndroidManifest.xml:12:9-16:18
+22            <action android:name="android.intent.action.GET_CONTENT" />
+22-->[:file_picker] /home/umair-liaqat-552/StudioProjects/driver_app/build/file_picker/intermediates/merged_manifest/release/AndroidManifest.xml:13:13-72
+22-->[:file_picker] /home/umair-liaqat-552/StudioProjects/driver_app/build/file_picker/intermediates/merged_manifest/release/AndroidManifest.xml:13:21-69
+23
+24            <data android:mimeType="*/*" />
+24-->/home/umair-liaqat-552/StudioProjects/driver_app/android/app/src/main/AndroidManifest.xml:69:17-75
+25        </intent>
+26
+27        <package android:name="com.facebook.katana" /> <!-- Needs to be explicitly declared on Android R+ -->
+27-->[com.facebook.android:facebook-common:16.0.0] /home/umair-liaqat-552/.gradle/caches/transforms-3/d880c2e99b8379fb947bce8756210049/transformed/jetified-facebook-common-16.0.0/AndroidManifest.xml:18:9-55
+27-->[com.facebook.android:facebook-common:16.0.0] /home/umair-liaqat-552/.gradle/caches/transforms-3/d880c2e99b8379fb947bce8756210049/transformed/jetified-facebook-common-16.0.0/AndroidManifest.xml:18:18-52
+28        <package android:name="com.google.android.apps.maps" />
+28-->[com.google.android.gms:play-services-maps:18.1.0] /home/umair-liaqat-552/.gradle/caches/transforms-3/d5e4c04f4690837574f4fd959dc722b7/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:33:9-64
+28-->[com.google.android.gms:play-services-maps:18.1.0] /home/umair-liaqat-552/.gradle/caches/transforms-3/d5e4c04f4690837574f4fd959dc722b7/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:33:18-61
+29    </queries>
+30
+31    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+31-->[:location] /home/umair-liaqat-552/StudioProjects/driver_app/build/location/intermediates/merged_manifest/release/AndroidManifest.xml:9:5-81
+31-->[:location] /home/umair-liaqat-552/StudioProjects/driver_app/build/location/intermediates/merged_manifest/release/AndroidManifest.xml:9:22-78
+32    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+32-->[com.google.firebase:firebase-messaging:23.1.1] /home/umair-liaqat-552/.gradle/caches/transforms-3/f20b4cbee5d172b16cfaea4a2c26ea87/transformed/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:28:5-82
+32-->[com.google.firebase:firebase-messaging:23.1.1] /home/umair-liaqat-552/.gradle/caches/transforms-3/f20b4cbee5d172b16cfaea4a2c26ea87/transformed/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:28:22-79
+33
+34    <uses-feature
+34-->[com.google.android.gms:play-services-maps:18.1.0] /home/umair-liaqat-552/.gradle/caches/transforms-3/d5e4c04f4690837574f4fd959dc722b7/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:26:5-28:35
+35        android:glEsVersion="0x00020000"
+35-->[com.google.android.gms:play-services-maps:18.1.0] /home/umair-liaqat-552/.gradle/caches/transforms-3/d5e4c04f4690837574f4fd959dc722b7/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:27:9-41
+36        android:required="true" />
+36-->[com.google.android.gms:play-services-maps:18.1.0] /home/umair-liaqat-552/.gradle/caches/transforms-3/d5e4c04f4690837574f4fd959dc722b7/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:28:9-32
+37
+38    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+38-->[com.facebook.android:facebook-core:16.0.0] /home/umair-liaqat-552/.gradle/caches/transforms-3/4b6b462e2d105328ccf1b6a011f3363f/transformed/jetified-facebook-core-16.0.0/AndroidManifest.xml:16:5-79
+38-->[com.facebook.android:facebook-core:16.0.0] /home/umair-liaqat-552/.gradle/caches/transforms-3/4b6b462e2d105328ccf1b6a011f3363f/transformed/jetified-facebook-core-16.0.0/AndroidManifest.xml:16:22-76
+39
+40    <permission
+40-->[androidx.core:core:1.9.0] /home/umair-liaqat-552/.gradle/caches/transforms-3/3be1c84ba3978673562f295cdead12c4/transformed/core-1.9.0/AndroidManifest.xml:22:5-24:47
+41        android:name="com.example.driver_app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+41-->[androidx.core:core:1.9.0] /home/umair-liaqat-552/.gradle/caches/transforms-3/3be1c84ba3978673562f295cdead12c4/transformed/core-1.9.0/AndroidManifest.xml:23:9-81
+42        android:protectionLevel="signature" />
+42-->[androidx.core:core:1.9.0] /home/umair-liaqat-552/.gradle/caches/transforms-3/3be1c84ba3978673562f295cdead12c4/transformed/core-1.9.0/AndroidManifest.xml:24:9-44
+43
+44    <uses-permission android:name="com.example.driver_app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+44-->[androidx.core:core:1.9.0] /home/umair-liaqat-552/.gradle/caches/transforms-3/3be1c84ba3978673562f295cdead12c4/transformed/core-1.9.0/AndroidManifest.xml:26:5-97
+44-->[androidx.core:core:1.9.0] /home/umair-liaqat-552/.gradle/caches/transforms-3/3be1c84ba3978673562f295cdead12c4/transformed/core-1.9.0/AndroidManifest.xml:26:22-94
+45    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+45-->[com.android.installreferrer:installreferrer:1.0] /home/umair-liaqat-552/.gradle/caches/transforms-3/311adec4bf565769c273b75d96821c26/transformed/jetified-installreferrer-1.0/AndroidManifest.xml:9:5-110
+45-->[com.android.installreferrer:installreferrer:1.0] /home/umair-liaqat-552/.gradle/caches/transforms-3/311adec4bf565769c273b75d96821c26/transformed/jetified-installreferrer-1.0/AndroidManifest.xml:9:22-107
+46
+47    <application
+48        android:name="android.app.Application"
+48-->/home/umair-liaqat-552/StudioProjects/driver_app/android/app/src/main/AndroidManifest.xml:10:9-42
+49        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+49-->[androidx.core:core:1.9.0] /home/umair-liaqat-552/.gradle/caches/transforms-3/3be1c84ba3978673562f295cdead12c4/transformed/core-1.9.0/AndroidManifest.xml:28:18-86
+50        android:icon="@mipmap/launcher_icon"
+50-->/home/umair-liaqat-552/StudioProjects/driver_app/android/app/src/main/AndroidManifest.xml:11:9-45
+51        android:label="Switch Driver"
+51-->/home/umair-liaqat-552/StudioProjects/driver_app/android/app/src/main/AndroidManifest.xml:9:9-38
+52        android:supportsRtl="true" >
+52-->[com.facebook.android:facebook-login:16.0.0] /home/umair-liaqat-552/.gradle/caches/transforms-3/c0cc344f9c81dbe36601100ce1b4d403/transformed/jetified-facebook-login-16.0.0/AndroidManifest.xml:16:18-44
+53        <meta-data
+53-->/home/umair-liaqat-552/StudioProjects/driver_app/android/app/src/main/AndroidManifest.xml:12:9-14:55
+54            android:name="com.facebook.sdk.ApplicationId"
+54-->/home/umair-liaqat-552/StudioProjects/driver_app/android/app/src/main/AndroidManifest.xml:13:13-58
+55            android:value="@string/facebook_app_id" />
+55-->/home/umair-liaqat-552/StudioProjects/driver_app/android/app/src/main/AndroidManifest.xml:14:13-52
+56        <meta-data
+56-->/home/umair-liaqat-552/StudioProjects/driver_app/android/app/src/main/AndroidManifest.xml:15:9-17:61
+57            android:name="com.facebook.sdk.ClientToken"
+57-->/home/umair-liaqat-552/StudioProjects/driver_app/android/app/src/main/AndroidManifest.xml:16:13-56
+58            android:value="@string/facebook_client_token" />
+58-->/home/umair-liaqat-552/StudioProjects/driver_app/android/app/src/main/AndroidManifest.xml:17:13-58
+59        <meta-data
+59-->/home/umair-liaqat-552/StudioProjects/driver_app/android/app/src/main/AndroidManifest.xml:19:9-21:71
+60            android:name="com.google.android.geo.API_KEY"
+60-->/home/umair-liaqat-552/StudioProjects/driver_app/android/app/src/main/AndroidManifest.xml:20:13-58
+61            android:value="AIzaSyAGVc_fxVnley2T6yDwwzkuZ7nY95Zw1CE" />
+61-->/home/umair-liaqat-552/StudioProjects/driver_app/android/app/src/main/AndroidManifest.xml:21:13-68
+62
+63        <activity
+63-->/home/umair-liaqat-552/StudioProjects/driver_app/android/app/src/main/AndroidManifest.xml:23:9-42:20
+64            android:name="com.example.driver_app.MainActivity"
+64-->/home/umair-liaqat-552/StudioProjects/driver_app/android/app/src/main/AndroidManifest.xml:24:13-41
+65            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+65-->/home/umair-liaqat-552/StudioProjects/driver_app/android/app/src/main/AndroidManifest.xml:28:13-163
+66            android:exported="true"
+66-->/home/umair-liaqat-552/StudioProjects/driver_app/android/app/src/main/AndroidManifest.xml:25:13-36
+67            android:hardwareAccelerated="true"
+67-->/home/umair-liaqat-552/StudioProjects/driver_app/android/app/src/main/AndroidManifest.xml:29:13-47
+68            android:launchMode="singleTop"
+68-->/home/umair-liaqat-552/StudioProjects/driver_app/android/app/src/main/AndroidManifest.xml:26:13-43
+69            android:theme="@style/LaunchTheme"
+69-->/home/umair-liaqat-552/StudioProjects/driver_app/android/app/src/main/AndroidManifest.xml:27:13-47
+70            android:windowSoftInputMode="adjustResize" >
+70-->/home/umair-liaqat-552/StudioProjects/driver_app/android/app/src/main/AndroidManifest.xml:30:13-55
+71
+72            <!--
+73                 Specifies an Android theme to apply to this Activity as soon as
+74                 the Android process has started. This theme is visible to the user
+75                 while the Flutter UI initializes. After that, this theme continues
+76                 to determine the Window background behind the Flutter UI.
+77            -->
+78            <meta-data
+78-->/home/umair-liaqat-552/StudioProjects/driver_app/android/app/src/main/AndroidManifest.xml:35:13-37:57
+79                android:name="io.flutter.embedding.android.NormalTheme"
+79-->/home/umair-liaqat-552/StudioProjects/driver_app/android/app/src/main/AndroidManifest.xml:36:17-72
+80                android:resource="@style/NormalTheme" />
+80-->/home/umair-liaqat-552/StudioProjects/driver_app/android/app/src/main/AndroidManifest.xml:37:17-54
+81
+82            <intent-filter>
+82-->/home/umair-liaqat-552/StudioProjects/driver_app/android/app/src/main/AndroidManifest.xml:38:13-41:29
+83                <action android:name="android.intent.action.MAIN" />
+83-->/home/umair-liaqat-552/StudioProjects/driver_app/android/app/src/main/AndroidManifest.xml:39:17-69
+83-->/home/umair-liaqat-552/StudioProjects/driver_app/android/app/src/main/AndroidManifest.xml:39:25-66
+84
+85                <category android:name="android.intent.category.LAUNCHER" />
+85-->/home/umair-liaqat-552/StudioProjects/driver_app/android/app/src/main/AndroidManifest.xml:40:17-77
+85-->/home/umair-liaqat-552/StudioProjects/driver_app/android/app/src/main/AndroidManifest.xml:40:27-74
+86            </intent-filter>
+87        </activity>
+88        <!--
+89             Don't delete the meta-data below.
+90             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+91        -->
+92        <meta-data
+92-->/home/umair-liaqat-552/StudioProjects/driver_app/android/app/src/main/AndroidManifest.xml:45:9-47:33
+93            android:name="flutterEmbedding"
+93-->/home/umair-liaqat-552/StudioProjects/driver_app/android/app/src/main/AndroidManifest.xml:46:13-44
+94            android:value="2" />
+94-->/home/umair-liaqat-552/StudioProjects/driver_app/android/app/src/main/AndroidManifest.xml:47:13-30
+95        <meta-data
+95-->/home/umair-liaqat-552/StudioProjects/driver_app/android/app/src/main/AndroidManifest.xml:12:9-14:55
+96            android:name="com.facebook.sdk.ApplicationId"
+96-->/home/umair-liaqat-552/StudioProjects/driver_app/android/app/src/main/AndroidManifest.xml:13:13-58
+97            android:value="@string/facebook_app_id" />
+97-->/home/umair-liaqat-552/StudioProjects/driver_app/android/app/src/main/AndroidManifest.xml:14:13-52
+98        <meta-data
+98-->/home/umair-liaqat-552/StudioProjects/driver_app/android/app/src/main/AndroidManifest.xml:15:9-17:61
+99            android:name="com.facebook.sdk.ClientToken"
+99-->/home/umair-liaqat-552/StudioProjects/driver_app/android/app/src/main/AndroidManifest.xml:16:13-56
+100            android:value="@string/facebook_client_token" />
+100-->/home/umair-liaqat-552/StudioProjects/driver_app/android/app/src/main/AndroidManifest.xml:17:13-58
+101
+102        <activity
+102-->/home/umair-liaqat-552/StudioProjects/driver_app/android/app/src/main/AndroidManifest.xml:56:9-59:48
+103            android:name="com.facebook.FacebookActivity"
+103-->/home/umair-liaqat-552/StudioProjects/driver_app/android/app/src/main/AndroidManifest.xml:57:13-57
+104            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+104-->/home/umair-liaqat-552/StudioProjects/driver_app/android/app/src/main/AndroidManifest.xml:58:13-96
+105            android:label="@string/app_name"
+105-->/home/umair-liaqat-552/StudioProjects/driver_app/android/app/src/main/AndroidManifest.xml:59:13-45
+106            android:theme="@style/com_facebook_activity_theme" />
+106-->[com.facebook.android:facebook-common:16.0.0] /home/umair-liaqat-552/.gradle/caches/transforms-3/d880c2e99b8379fb947bce8756210049/transformed/jetified-facebook-common-16.0.0/AndroidManifest.xml:25:13-63
+107        <activity
+107-->/home/umair-liaqat-552/StudioProjects/driver_app/android/app/src/main/AndroidManifest.xml:60:9-71:20
+108            android:name="com.facebook.CustomTabActivity"
+108-->/home/umair-liaqat-552/StudioProjects/driver_app/android/app/src/main/AndroidManifest.xml:61:13-58
+109            android:exported="true" >
+109-->/home/umair-liaqat-552/StudioProjects/driver_app/android/app/src/main/AndroidManifest.xml:62:13-36
+110            <intent-filter>
+110-->/home/umair-liaqat-552/StudioProjects/driver_app/android/app/src/main/AndroidManifest.xml:63:13-70:29
+111                <action android:name="android.intent.action.VIEW" />
+111-->/home/umair-liaqat-552/StudioProjects/driver_app/android/app/src/main/AndroidManifest.xml:64:17-69
+111-->/home/umair-liaqat-552/StudioProjects/driver_app/android/app/src/main/AndroidManifest.xml:64:25-66
+112
+113                <category android:name="android.intent.category.DEFAULT" />
+113-->/home/umair-liaqat-552/StudioProjects/driver_app/android/app/src/main/AndroidManifest.xml:66:17-76
+113-->/home/umair-liaqat-552/StudioProjects/driver_app/android/app/src/main/AndroidManifest.xml:66:27-73
+114                <category android:name="android.intent.category.BROWSABLE" />
+114-->/home/umair-liaqat-552/StudioProjects/driver_app/android/app/src/main/AndroidManifest.xml:67:17-78
+114-->/home/umair-liaqat-552/StudioProjects/driver_app/android/app/src/main/AndroidManifest.xml:67:27-75
+115
+116                <data android:scheme="@string/fb_login_protocol_scheme" />
+116-->/home/umair-liaqat-552/StudioProjects/driver_app/android/app/src/main/AndroidManifest.xml:69:17-75
+116-->/home/umair-liaqat-552/StudioProjects/driver_app/android/app/src/main/AndroidManifest.xml:69:23-72
+117            </intent-filter>
+118            <intent-filter>
+118-->[com.facebook.android:facebook-common:16.0.0] /home/umair-liaqat-552/.gradle/caches/transforms-3/d880c2e99b8379fb947bce8756210049/transformed/jetified-facebook-common-16.0.0/AndroidManifest.xml:31:13-40:29
+119                <action android:name="android.intent.action.VIEW" />
+119-->/home/umair-liaqat-552/StudioProjects/driver_app/android/app/src/main/AndroidManifest.xml:64:17-69
+119-->/home/umair-liaqat-552/StudioProjects/driver_app/android/app/src/main/AndroidManifest.xml:64:25-66
+120
+121                <category android:name="android.intent.category.DEFAULT" />
+121-->/home/umair-liaqat-552/StudioProjects/driver_app/android/app/src/main/AndroidManifest.xml:66:17-76
+121-->/home/umair-liaqat-552/StudioProjects/driver_app/android/app/src/main/AndroidManifest.xml:66:27-73
+122                <category android:name="android.intent.category.BROWSABLE" />
+122-->/home/umair-liaqat-552/StudioProjects/driver_app/android/app/src/main/AndroidManifest.xml:67:17-78
+122-->/home/umair-liaqat-552/StudioProjects/driver_app/android/app/src/main/AndroidManifest.xml:67:27-75
+123
+124                <data
+124-->/home/umair-liaqat-552/StudioProjects/driver_app/android/app/src/main/AndroidManifest.xml:69:17-75
+125                    android:host="cct.com.example.driver_app"
+126                    android:scheme="fbconnect" />
+126-->/home/umair-liaqat-552/StudioProjects/driver_app/android/app/src/main/AndroidManifest.xml:69:23-72
+127            </intent-filter>
+128        </activity>
+129
+130        <service
+130-->[:cloud_firestore] /home/umair-liaqat-552/StudioProjects/driver_app/build/cloud_firestore/intermediates/merged_manifest/release/AndroidManifest.xml:10:9-14:19
+131            android:name="com.google.firebase.components.ComponentDiscoveryService"
+131-->[:cloud_firestore] /home/umair-liaqat-552/StudioProjects/driver_app/build/cloud_firestore/intermediates/merged_manifest/release/AndroidManifest.xml:10:18-89
+132            android:directBootAware="true"
+132-->[com.google.firebase:firebase-common:20.2.0] /home/umair-liaqat-552/.gradle/caches/transforms-3/c1f7cd0e68ddf89c76a753ac7fd1a66c/transformed/jetified-firebase-common-20.2.0/AndroidManifest.xml:34:13-43
+133            android:exported="false" >
+133-->[com.google.firebase:firebase-auth:21.1.0] /home/umair-liaqat-552/.gradle/caches/transforms-3/0548e507d3019ac84ce4969b57803f45/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:66:13-37
+134            <meta-data
+134-->[:cloud_firestore] /home/umair-liaqat-552/StudioProjects/driver_app/build/cloud_firestore/intermediates/merged_manifest/release/AndroidManifest.xml:11:13-13:85
+135                android:name="com.google.firebase.components:io.flutter.plugins.firebase.firestore.FlutterFirebaseFirestoreRegistrar"
+135-->[:cloud_firestore] /home/umair-liaqat-552/StudioProjects/driver_app/build/cloud_firestore/intermediates/merged_manifest/release/AndroidManifest.xml:12:17-134
+136                android:value="com.google.firebase.components.ComponentRegistrar" />
+136-->[:cloud_firestore] /home/umair-liaqat-552/StudioProjects/driver_app/build/cloud_firestore/intermediates/merged_manifest/release/AndroidManifest.xml:13:17-82
+137            <meta-data
+137-->[:cloud_functions] /home/umair-liaqat-552/StudioProjects/driver_app/build/cloud_functions/intermediates/merged_manifest/release/AndroidManifest.xml:11:13-13:85
+138                android:name="com.google.firebase.components:io.flutter.plugins.firebase.functions.FlutterFirebaseAppRegistrar"
+138-->[:cloud_functions] /home/umair-liaqat-552/StudioProjects/driver_app/build/cloud_functions/intermediates/merged_manifest/release/AndroidManifest.xml:12:17-128
+139                android:value="com.google.firebase.components.ComponentRegistrar" />
+139-->[:cloud_functions] /home/umair-liaqat-552/StudioProjects/driver_app/build/cloud_functions/intermediates/merged_manifest/release/AndroidManifest.xml:13:17-82
+140            <meta-data
+140-->[:firebase_auth] /home/umair-liaqat-552/StudioProjects/driver_app/build/firebase_auth/intermediates/merged_manifest/release/AndroidManifest.xml:11:13-13:85
+141                android:name="com.google.firebase.components:io.flutter.plugins.firebase.auth.FlutterFirebaseAuthRegistrar"
+141-->[:firebase_auth] /home/umair-liaqat-552/StudioProjects/driver_app/build/firebase_auth/intermediates/merged_manifest/release/AndroidManifest.xml:12:17-124
+142                android:value="com.google.firebase.components.ComponentRegistrar" />
+142-->[:firebase_auth] /home/umair-liaqat-552/StudioProjects/driver_app/build/firebase_auth/intermediates/merged_manifest/release/AndroidManifest.xml:13:17-82
+143            <meta-data
+143-->[:firebase_storage] /home/umair-liaqat-552/StudioProjects/driver_app/build/firebase_storage/intermediates/merged_manifest/release/AndroidManifest.xml:11:13-13:85
+144                android:name="com.google.firebase.components:io.flutter.plugins.firebase.storage.FlutterFirebaseAppRegistrar"
+144-->[:firebase_storage] /home/umair-liaqat-552/StudioProjects/driver_app/build/firebase_storage/intermediates/merged_manifest/release/AndroidManifest.xml:12:17-126
+145                android:value="com.google.firebase.components.ComponentRegistrar" />
+145-->[:firebase_storage] /home/umair-liaqat-552/StudioProjects/driver_app/build/firebase_storage/intermediates/merged_manifest/release/AndroidManifest.xml:13:17-82
+146            <meta-data
+146-->[:firebase_messaging] /home/umair-liaqat-552/StudioProjects/driver_app/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:38:13-40:85
+147                android:name="com.google.firebase.components:io.flutter.plugins.firebase.messaging.FlutterFirebaseAppRegistrar"
+147-->[:firebase_messaging] /home/umair-liaqat-552/StudioProjects/driver_app/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:39:17-128
+148                android:value="com.google.firebase.components.ComponentRegistrar" />
+148-->[:firebase_messaging] /home/umair-liaqat-552/StudioProjects/driver_app/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:40:17-82
+149            <meta-data
+149-->[:firebase_core] /home/umair-liaqat-552/StudioProjects/driver_app/build/firebase_core/intermediates/merged_manifest/release/AndroidManifest.xml:11:13-13:85
+150                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
+150-->[:firebase_core] /home/umair-liaqat-552/StudioProjects/driver_app/build/firebase_core/intermediates/merged_manifest/release/AndroidManifest.xml:12:17-124
+151                android:value="com.google.firebase.components.ComponentRegistrar" />
+151-->[:firebase_core] /home/umair-liaqat-552/StudioProjects/driver_app/build/firebase_core/intermediates/merged_manifest/release/AndroidManifest.xml:13:17-82
+152            <meta-data
+152-->[com.google.firebase:firebase-auth:21.1.0] /home/umair-liaqat-552/.gradle/caches/transforms-3/0548e507d3019ac84ce4969b57803f45/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:67:13-69:85
+153                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+153-->[com.google.firebase:firebase-auth:21.1.0] /home/umair-liaqat-552/.gradle/caches/transforms-3/0548e507d3019ac84ce4969b57803f45/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:68:17-109
+154                android:value="com.google.firebase.components.ComponentRegistrar" />
+154-->[com.google.firebase:firebase-auth:21.1.0] /home/umair-liaqat-552/.gradle/caches/transforms-3/0548e507d3019ac84ce4969b57803f45/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:69:17-82
+155            <meta-data
+155-->[com.google.firebase:firebase-messaging:23.1.1] /home/umair-liaqat-552/.gradle/caches/transforms-3/f20b4cbee5d172b16cfaea4a2c26ea87/transformed/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:55:13-57:85
+156                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+156-->[com.google.firebase:firebase-messaging:23.1.1] /home/umair-liaqat-552/.gradle/caches/transforms-3/f20b4cbee5d172b16cfaea4a2c26ea87/transformed/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:56:17-119
+157                android:value="com.google.firebase.components.ComponentRegistrar" />
+157-->[com.google.firebase:firebase-messaging:23.1.1] /home/umair-liaqat-552/.gradle/caches/transforms-3/f20b4cbee5d172b16cfaea4a2c26ea87/transformed/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:57:17-82
+158            <meta-data
+158-->[com.google.firebase:firebase-datatransport:18.1.7] /home/umair-liaqat-552/.gradle/caches/transforms-3/6d46cd01ad2644e3941e793a2c9f0ffe/transformed/jetified-firebase-datatransport-18.1.7/AndroidManifest.xml:27:13-29:85
+159                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+159-->[com.google.firebase:firebase-datatransport:18.1.7] /home/umair-liaqat-552/.gradle/caches/transforms-3/6d46cd01ad2644e3941e793a2c9f0ffe/transformed/jetified-firebase-datatransport-18.1.7/AndroidManifest.xml:28:17-115
+160                android:value="com.google.firebase.components.ComponentRegistrar" />
+160-->[com.google.firebase:firebase-datatransport:18.1.7] /home/umair-liaqat-552/.gradle/caches/transforms-3/6d46cd01ad2644e3941e793a2c9f0ffe/transformed/jetified-firebase-datatransport-18.1.7/AndroidManifest.xml:29:17-82
+161            <meta-data
+161-->[com.google.firebase:firebase-functions:20.2.1] /home/umair-liaqat-552/.gradle/caches/transforms-3/1c17b2d12b6fac340e42ed92c4cc9507/transformed/jetified-firebase-functions-20.2.1/AndroidManifest.xml:17:13-19:85
+162                android:name="com.google.firebase.components:com.google.firebase.functions.FunctionsRegistrar"
+162-->[com.google.firebase:firebase-functions:20.2.1] /home/umair-liaqat-552/.gradle/caches/transforms-3/1c17b2d12b6fac340e42ed92c4cc9507/transformed/jetified-firebase-functions-20.2.1/AndroidManifest.xml:18:17-111
+163                android:value="com.google.firebase.components.ComponentRegistrar" />
+163-->[com.google.firebase:firebase-functions:20.2.1] /home/umair-liaqat-552/.gradle/caches/transforms-3/1c17b2d12b6fac340e42ed92c4cc9507/transformed/jetified-firebase-functions-20.2.1/AndroidManifest.xml:19:17-82
+164            <meta-data
+164-->[com.google.firebase:firebase-firestore:24.4.1] /home/umair-liaqat-552/.gradle/caches/transforms-3/c2814ab600cd7ad8abb3930813a7dae1/transformed/jetified-firebase-firestore-24.4.1/AndroidManifest.xml:19:13-21:85
+165                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+165-->[com.google.firebase:firebase-firestore:24.4.1] /home/umair-liaqat-552/.gradle/caches/transforms-3/c2814ab600cd7ad8abb3930813a7dae1/transformed/jetified-firebase-firestore-24.4.1/AndroidManifest.xml:20:17-111
+166                android:value="com.google.firebase.components.ComponentRegistrar" />
+166-->[com.google.firebase:firebase-firestore:24.4.1] /home/umair-liaqat-552/.gradle/caches/transforms-3/c2814ab600cd7ad8abb3930813a7dae1/transformed/jetified-firebase-firestore-24.4.1/AndroidManifest.xml:21:17-82
+167            <meta-data
+167-->[com.google.firebase:firebase-storage:20.1.0] /home/umair-liaqat-552/.gradle/caches/transforms-3/0da25f878ca7fc72a1a3e4059e81557e/transformed/jetified-firebase-storage-20.1.0/AndroidManifest.xml:32:13-34:85
+168                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
+168-->[com.google.firebase:firebase-storage:20.1.0] /home/umair-liaqat-552/.gradle/caches/transforms-3/0da25f878ca7fc72a1a3e4059e81557e/transformed/jetified-firebase-storage-20.1.0/AndroidManifest.xml:33:17-107
+169                android:value="com.google.firebase.components.ComponentRegistrar" />
+169-->[com.google.firebase:firebase-storage:20.1.0] /home/umair-liaqat-552/.gradle/caches/transforms-3/0da25f878ca7fc72a1a3e4059e81557e/transformed/jetified-firebase-storage-20.1.0/AndroidManifest.xml:34:17-82
+170            <meta-data
+170-->[com.google.firebase:firebase-iid:21.1.0] /home/umair-liaqat-552/.gradle/caches/transforms-3/eaed7886d53cb1ba0475f52afb0dc686/transformed/jetified-firebase-iid-21.1.0/AndroidManifest.xml:32:13-34:85
+171                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+171-->[com.google.firebase:firebase-iid:21.1.0] /home/umair-liaqat-552/.gradle/caches/transforms-3/eaed7886d53cb1ba0475f52afb0dc686/transformed/jetified-firebase-iid-21.1.0/AndroidManifest.xml:33:17-96
+172                android:value="com.google.firebase.components.ComponentRegistrar" />
+172-->[com.google.firebase:firebase-iid:21.1.0] /home/umair-liaqat-552/.gradle/caches/transforms-3/eaed7886d53cb1ba0475f52afb0dc686/transformed/jetified-firebase-iid-21.1.0/AndroidManifest.xml:34:17-82
+173            <meta-data
+173-->[com.google.firebase:firebase-installations:17.1.0] /home/umair-liaqat-552/.gradle/caches/transforms-3/3fe9d54d7b663dbec51ad86b1763f50a/transformed/jetified-firebase-installations-17.1.0/AndroidManifest.xml:17:13-19:85
+174                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+174-->[com.google.firebase:firebase-installations:17.1.0] /home/umair-liaqat-552/.gradle/caches/transforms-3/3fe9d54d7b663dbec51ad86b1763f50a/transformed/jetified-firebase-installations-17.1.0/AndroidManifest.xml:18:17-127
+175                android:value="com.google.firebase.components.ComponentRegistrar" />
+175-->[com.google.firebase:firebase-installations:17.1.0] /home/umair-liaqat-552/.gradle/caches/transforms-3/3fe9d54d7b663dbec51ad86b1763f50a/transformed/jetified-firebase-installations-17.1.0/AndroidManifest.xml:19:17-82
+176        </service>
+177        <service
+177-->[:firebase_messaging] /home/umair-liaqat-552/StudioProjects/driver_app/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:16:9-19:72
+178            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingBackgroundService"
+178-->[:firebase_messaging] /home/umair-liaqat-552/StudioProjects/driver_app/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:17:13-107
+179            android:exported="false"
+179-->[:firebase_messaging] /home/umair-liaqat-552/StudioProjects/driver_app/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:18:13-37
+180            android:permission="android.permission.BIND_JOB_SERVICE" />
+180-->[:firebase_messaging] /home/umair-liaqat-552/StudioProjects/driver_app/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:19:13-69
+181        <service
+181-->[:firebase_messaging] /home/umair-liaqat-552/StudioProjects/driver_app/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:20:9-26:19
+182            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingService"
+182-->[:firebase_messaging] /home/umair-liaqat-552/StudioProjects/driver_app/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:21:13-97
+183            android:exported="false" >
+183-->[:firebase_messaging] /home/umair-liaqat-552/StudioProjects/driver_app/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:22:13-37
+184            <intent-filter>
+184-->[:firebase_messaging] /home/umair-liaqat-552/StudioProjects/driver_app/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:23:13-25:29
+185                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+185-->[:firebase_messaging] /home/umair-liaqat-552/StudioProjects/driver_app/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:24:17-78
+185-->[:firebase_messaging] /home/umair-liaqat-552/StudioProjects/driver_app/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:24:25-75
+186            </intent-filter>
+187        </service>
+188
+189        <receiver
+189-->[:firebase_messaging] /home/umair-liaqat-552/StudioProjects/driver_app/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:28:9-35:20
+190            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingReceiver"
+190-->[:firebase_messaging] /home/umair-liaqat-552/StudioProjects/driver_app/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:29:13-98
+191            android:exported="true"
+191-->[:firebase_messaging] /home/umair-liaqat-552/StudioProjects/driver_app/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:30:13-36
+192            android:permission="com.google.android.c2dm.permission.SEND" >
+192-->[:firebase_messaging] /home/umair-liaqat-552/StudioProjects/driver_app/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:31:13-73
+193            <intent-filter>
+193-->[:firebase_messaging] /home/umair-liaqat-552/StudioProjects/driver_app/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:32:13-34:29
+194                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+194-->[:firebase_messaging] /home/umair-liaqat-552/StudioProjects/driver_app/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:33:17-81
+194-->[:firebase_messaging] /home/umair-liaqat-552/StudioProjects/driver_app/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:33:25-78
+195            </intent-filter>
+196        </receiver>
+197
+198        <provider
+198-->[:firebase_messaging] /home/umair-liaqat-552/StudioProjects/driver_app/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:43:9-47:38
+199            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingInitProvider"
+199-->[:firebase_messaging] /home/umair-liaqat-552/StudioProjects/driver_app/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:44:13-102
+200            android:authorities="com.example.driver_app.flutterfirebasemessaginginitprovider"
+200-->[:firebase_messaging] /home/umair-liaqat-552/StudioProjects/driver_app/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:45:13-88
+201            android:exported="false"
+201-->[:firebase_messaging] /home/umair-liaqat-552/StudioProjects/driver_app/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:46:13-37
+202            android:initOrder="99" />
+202-->[:firebase_messaging] /home/umair-liaqat-552/StudioProjects/driver_app/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:47:13-35
+203
+204        <service
+204-->[:geolocator_android] /home/umair-liaqat-552/StudioProjects/driver_app/build/geolocator_android/intermediates/merged_manifest/release/AndroidManifest.xml:12:9-16:56
+205            android:name="com.baseflow.geolocator.GeolocatorLocationService"
+205-->[:geolocator_android] /home/umair-liaqat-552/StudioProjects/driver_app/build/geolocator_android/intermediates/merged_manifest/release/AndroidManifest.xml:13:13-77
+206            android:enabled="true"
+206-->[:geolocator_android] /home/umair-liaqat-552/StudioProjects/driver_app/build/geolocator_android/intermediates/merged_manifest/release/AndroidManifest.xml:14:13-35
+207            android:exported="false"
+207-->[:geolocator_android] /home/umair-liaqat-552/StudioProjects/driver_app/build/geolocator_android/intermediates/merged_manifest/release/AndroidManifest.xml:15:13-37
+208            android:foregroundServiceType="location" />
+208-->[:geolocator_android] /home/umair-liaqat-552/StudioProjects/driver_app/build/geolocator_android/intermediates/merged_manifest/release/AndroidManifest.xml:16:13-53
+209        <service
+209-->[:location] /home/umair-liaqat-552/StudioProjects/driver_app/build/location/intermediates/merged_manifest/release/AndroidManifest.xml:13:9-17:56
+210            android:name="com.lyokone.location.FlutterLocationService"
+210-->[:location] /home/umair-liaqat-552/StudioProjects/driver_app/build/location/intermediates/merged_manifest/release/AndroidManifest.xml:14:13-71
+211            android:enabled="true"
+211-->[:location] /home/umair-liaqat-552/StudioProjects/driver_app/build/location/intermediates/merged_manifest/release/AndroidManifest.xml:15:13-35
+212            android:exported="false"
+212-->[:location] /home/umair-liaqat-552/StudioProjects/driver_app/build/location/intermediates/merged_manifest/release/AndroidManifest.xml:16:13-37
+213            android:foregroundServiceType="location" />
+213-->[:location] /home/umair-liaqat-552/StudioProjects/driver_app/build/location/intermediates/merged_manifest/release/AndroidManifest.xml:17:13-53
+214
+215        <uses-library
+215-->[androidx.window:window:1.0.0-beta04] /home/umair-liaqat-552/.gradle/caches/transforms-3/542a859793ec57d6a4d40865c7efc6d9/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
+216            android:name="androidx.window.extensions"
+216-->[androidx.window:window:1.0.0-beta04] /home/umair-liaqat-552/.gradle/caches/transforms-3/542a859793ec57d6a4d40865c7efc6d9/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
+217            android:required="false" />
+217-->[androidx.window:window:1.0.0-beta04] /home/umair-liaqat-552/.gradle/caches/transforms-3/542a859793ec57d6a4d40865c7efc6d9/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
+218        <uses-library
+218-->[androidx.window:window:1.0.0-beta04] /home/umair-liaqat-552/.gradle/caches/transforms-3/542a859793ec57d6a4d40865c7efc6d9/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
+219            android:name="androidx.window.sidecar"
+219-->[androidx.window:window:1.0.0-beta04] /home/umair-liaqat-552/.gradle/caches/transforms-3/542a859793ec57d6a4d40865c7efc6d9/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
+220            android:required="false" />
+220-->[androidx.window:window:1.0.0-beta04] /home/umair-liaqat-552/.gradle/caches/transforms-3/542a859793ec57d6a4d40865c7efc6d9/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
+221
+222        <activity
+222-->[com.google.firebase:firebase-auth:21.1.0] /home/umair-liaqat-552/.gradle/caches/transforms-3/0548e507d3019ac84ce4969b57803f45/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:27:9-44:20
+223            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+223-->[com.google.firebase:firebase-auth:21.1.0] /home/umair-liaqat-552/.gradle/caches/transforms-3/0548e507d3019ac84ce4969b57803f45/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:28:13-80
+224            android:excludeFromRecents="true"
+224-->[com.google.firebase:firebase-auth:21.1.0] /home/umair-liaqat-552/.gradle/caches/transforms-3/0548e507d3019ac84ce4969b57803f45/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:29:13-46
+225            android:exported="true"
+225-->[com.google.firebase:firebase-auth:21.1.0] /home/umair-liaqat-552/.gradle/caches/transforms-3/0548e507d3019ac84ce4969b57803f45/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:30:13-36
+226            android:launchMode="singleTask"
+226-->[com.google.firebase:firebase-auth:21.1.0] /home/umair-liaqat-552/.gradle/caches/transforms-3/0548e507d3019ac84ce4969b57803f45/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:31:13-44
+227            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+227-->[com.google.firebase:firebase-auth:21.1.0] /home/umair-liaqat-552/.gradle/caches/transforms-3/0548e507d3019ac84ce4969b57803f45/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:32:13-72
+228            <intent-filter>
+228-->[com.google.firebase:firebase-auth:21.1.0] /home/umair-liaqat-552/.gradle/caches/transforms-3/0548e507d3019ac84ce4969b57803f45/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:33:13-43:29
+229                <action android:name="android.intent.action.VIEW" />
+229-->/home/umair-liaqat-552/StudioProjects/driver_app/android/app/src/main/AndroidManifest.xml:64:17-69
+229-->/home/umair-liaqat-552/StudioProjects/driver_app/android/app/src/main/AndroidManifest.xml:64:25-66
+230
+231                <category android:name="android.intent.category.DEFAULT" />
+231-->/home/umair-liaqat-552/StudioProjects/driver_app/android/app/src/main/AndroidManifest.xml:66:17-76
+231-->/home/umair-liaqat-552/StudioProjects/driver_app/android/app/src/main/AndroidManifest.xml:66:27-73
+232                <category android:name="android.intent.category.BROWSABLE" />
+232-->/home/umair-liaqat-552/StudioProjects/driver_app/android/app/src/main/AndroidManifest.xml:67:17-78
+232-->/home/umair-liaqat-552/StudioProjects/driver_app/android/app/src/main/AndroidManifest.xml:67:27-75
+233
+234                <data
+234-->/home/umair-liaqat-552/StudioProjects/driver_app/android/app/src/main/AndroidManifest.xml:69:17-75
+235                    android:host="firebase.auth"
+236                    android:path="/"
+237                    android:scheme="genericidp" />
+237-->/home/umair-liaqat-552/StudioProjects/driver_app/android/app/src/main/AndroidManifest.xml:69:23-72
+238            </intent-filter>
+239        </activity>
+240        <activity
+240-->[com.google.firebase:firebase-auth:21.1.0] /home/umair-liaqat-552/.gradle/caches/transforms-3/0548e507d3019ac84ce4969b57803f45/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:45:9-62:20
+241            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+241-->[com.google.firebase:firebase-auth:21.1.0] /home/umair-liaqat-552/.gradle/caches/transforms-3/0548e507d3019ac84ce4969b57803f45/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:46:13-79
+242            android:excludeFromRecents="true"
+242-->[com.google.firebase:firebase-auth:21.1.0] /home/umair-liaqat-552/.gradle/caches/transforms-3/0548e507d3019ac84ce4969b57803f45/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:47:13-46
+243            android:exported="true"
+243-->[com.google.firebase:firebase-auth:21.1.0] /home/umair-liaqat-552/.gradle/caches/transforms-3/0548e507d3019ac84ce4969b57803f45/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:48:13-36
+244            android:launchMode="singleTask"
+244-->[com.google.firebase:firebase-auth:21.1.0] /home/umair-liaqat-552/.gradle/caches/transforms-3/0548e507d3019ac84ce4969b57803f45/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:49:13-44
+245            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+245-->[com.google.firebase:firebase-auth:21.1.0] /home/umair-liaqat-552/.gradle/caches/transforms-3/0548e507d3019ac84ce4969b57803f45/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:50:13-72
+246            <intent-filter>
+246-->[com.google.firebase:firebase-auth:21.1.0] /home/umair-liaqat-552/.gradle/caches/transforms-3/0548e507d3019ac84ce4969b57803f45/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:51:13-61:29
+247                <action android:name="android.intent.action.VIEW" />
+247-->/home/umair-liaqat-552/StudioProjects/driver_app/android/app/src/main/AndroidManifest.xml:64:17-69
+247-->/home/umair-liaqat-552/StudioProjects/driver_app/android/app/src/main/AndroidManifest.xml:64:25-66
+248
+249                <category android:name="android.intent.category.DEFAULT" />
+249-->/home/umair-liaqat-552/StudioProjects/driver_app/android/app/src/main/AndroidManifest.xml:66:17-76
+249-->/home/umair-liaqat-552/StudioProjects/driver_app/android/app/src/main/AndroidManifest.xml:66:27-73
+250                <category android:name="android.intent.category.BROWSABLE" />
+250-->/home/umair-liaqat-552/StudioProjects/driver_app/android/app/src/main/AndroidManifest.xml:67:17-78
+250-->/home/umair-liaqat-552/StudioProjects/driver_app/android/app/src/main/AndroidManifest.xml:67:27-75
+251
+252                <data
+252-->/home/umair-liaqat-552/StudioProjects/driver_app/android/app/src/main/AndroidManifest.xml:69:17-75
+253                    android:host="firebase.auth"
+254                    android:path="/"
+255                    android:scheme="recaptcha" />
+255-->/home/umair-liaqat-552/StudioProjects/driver_app/android/app/src/main/AndroidManifest.xml:69:23-72
+256            </intent-filter>
+257        </activity>
+258
+259        <receiver
+259-->[com.google.firebase:firebase-messaging:23.1.1] /home/umair-liaqat-552/.gradle/caches/transforms-3/f20b4cbee5d172b16cfaea4a2c26ea87/transformed/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:31:9-38:20
+260            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+260-->[com.google.firebase:firebase-messaging:23.1.1] /home/umair-liaqat-552/.gradle/caches/transforms-3/f20b4cbee5d172b16cfaea4a2c26ea87/transformed/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:32:13-78
+261            android:exported="true"
+261-->[com.google.firebase:firebase-messaging:23.1.1] /home/umair-liaqat-552/.gradle/caches/transforms-3/f20b4cbee5d172b16cfaea4a2c26ea87/transformed/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:33:13-36
+262            android:permission="com.google.android.c2dm.permission.SEND" >
+262-->[com.google.firebase:firebase-messaging:23.1.1] /home/umair-liaqat-552/.gradle/caches/transforms-3/f20b4cbee5d172b16cfaea4a2c26ea87/transformed/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:34:13-73
+263            <intent-filter>
+263-->[:firebase_messaging] /home/umair-liaqat-552/StudioProjects/driver_app/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:32:13-34:29
+264                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+264-->[:firebase_messaging] /home/umair-liaqat-552/StudioProjects/driver_app/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:33:17-81
+264-->[:firebase_messaging] /home/umair-liaqat-552/StudioProjects/driver_app/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:33:25-78
+265            </intent-filter>
+266        </receiver>
+267        <!--
+268             FirebaseMessagingService performs security checks at runtime,
+269             but set to not exported to explicitly avoid allowing another app to call it.
+270        -->
+271        <service
+271-->[com.google.firebase:firebase-messaging:23.1.1] /home/umair-liaqat-552/.gradle/caches/transforms-3/f20b4cbee5d172b16cfaea4a2c26ea87/transformed/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:44:9-51:19
+272            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+272-->[com.google.firebase:firebase-messaging:23.1.1] /home/umair-liaqat-552/.gradle/caches/transforms-3/f20b4cbee5d172b16cfaea4a2c26ea87/transformed/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:45:13-82
+273            android:directBootAware="true"
+273-->[com.google.firebase:firebase-messaging:23.1.1] /home/umair-liaqat-552/.gradle/caches/transforms-3/f20b4cbee5d172b16cfaea4a2c26ea87/transformed/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:46:13-43
+274            android:exported="false" >
+274-->[com.google.firebase:firebase-messaging:23.1.1] /home/umair-liaqat-552/.gradle/caches/transforms-3/f20b4cbee5d172b16cfaea4a2c26ea87/transformed/jetified-firebase-messaging-23.1.1/AndroidManifest.xml:47:13-37
+275            <intent-filter android:priority="-500" >
+275-->[:firebase_messaging] /home/umair-liaqat-552/StudioProjects/driver_app/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:23:13-25:29
+276                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+276-->[:firebase_messaging] /home/umair-liaqat-552/StudioProjects/driver_app/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:24:17-78
+276-->[:firebase_messaging] /home/umair-liaqat-552/StudioProjects/driver_app/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:24:25-75
+277            </intent-filter>
+278        </service>
+279        <service
+279-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /home/umair-liaqat-552/.gradle/caches/transforms-3/2e212974fabf70c844067783fe04df4d/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:28:9-34:19
+280            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+280-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /home/umair-liaqat-552/.gradle/caches/transforms-3/2e212974fabf70c844067783fe04df4d/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:29:13-103
+281            android:exported="false" >
+281-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /home/umair-liaqat-552/.gradle/caches/transforms-3/2e212974fabf70c844067783fe04df4d/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:30:13-37
+282            <meta-data
+282-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /home/umair-liaqat-552/.gradle/caches/transforms-3/2e212974fabf70c844067783fe04df4d/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:31:13-33:39
+283                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+283-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /home/umair-liaqat-552/.gradle/caches/transforms-3/2e212974fabf70c844067783fe04df4d/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:32:17-94
+284                android:value="cct" />
+284-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /home/umair-liaqat-552/.gradle/caches/transforms-3/2e212974fabf70c844067783fe04df4d/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:33:17-36
+285        </service>
+286        <service
+286-->[com.google.android.datatransport:transport-runtime:3.1.8] /home/umair-liaqat-552/.gradle/caches/transforms-3/c23d9811568143692758aab014c5c508/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:26:9-30:19
+287            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+287-->[com.google.android.datatransport:transport-runtime:3.1.8] /home/umair-liaqat-552/.gradle/caches/transforms-3/c23d9811568143692758aab014c5c508/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:27:13-117
+288            android:exported="false"
+288-->[com.google.android.datatransport:transport-runtime:3.1.8] /home/umair-liaqat-552/.gradle/caches/transforms-3/c23d9811568143692758aab014c5c508/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:28:13-37
+289            android:permission="android.permission.BIND_JOB_SERVICE" >
+289-->[com.google.android.datatransport:transport-runtime:3.1.8] /home/umair-liaqat-552/.gradle/caches/transforms-3/c23d9811568143692758aab014c5c508/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:29:13-69
+290        </service>
+291
+292        <receiver
+292-->[com.google.android.datatransport:transport-runtime:3.1.8] /home/umair-liaqat-552/.gradle/caches/transforms-3/c23d9811568143692758aab014c5c508/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:32:9-34:40
+293            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+293-->[com.google.android.datatransport:transport-runtime:3.1.8] /home/umair-liaqat-552/.gradle/caches/transforms-3/c23d9811568143692758aab014c5c508/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:33:13-132
+294            android:exported="false" />
+294-->[com.google.android.datatransport:transport-runtime:3.1.8] /home/umair-liaqat-552/.gradle/caches/transforms-3/c23d9811568143692758aab014c5c508/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:34:13-37
+295
+296        <provider
+296-->[com.google.firebase:firebase-common:20.2.0] /home/umair-liaqat-552/.gradle/caches/transforms-3/c1f7cd0e68ddf89c76a753ac7fd1a66c/transformed/jetified-firebase-common-20.2.0/AndroidManifest.xml:25:9-30:39
+297            android:name="com.google.firebase.provider.FirebaseInitProvider"
+297-->[com.google.firebase:firebase-common:20.2.0] /home/umair-liaqat-552/.gradle/caches/transforms-3/c1f7cd0e68ddf89c76a753ac7fd1a66c/transformed/jetified-firebase-common-20.2.0/AndroidManifest.xml:26:13-77
+298            android:authorities="com.example.driver_app.firebaseinitprovider"
+298-->[com.google.firebase:firebase-common:20.2.0] /home/umair-liaqat-552/.gradle/caches/transforms-3/c1f7cd0e68ddf89c76a753ac7fd1a66c/transformed/jetified-firebase-common-20.2.0/AndroidManifest.xml:27:13-72
+299            android:directBootAware="true"
+299-->[com.google.firebase:firebase-common:20.2.0] /home/umair-liaqat-552/.gradle/caches/transforms-3/c1f7cd0e68ddf89c76a753ac7fd1a66c/transformed/jetified-firebase-common-20.2.0/AndroidManifest.xml:28:13-43
+300            android:exported="false"
+300-->[com.google.firebase:firebase-common:20.2.0] /home/umair-liaqat-552/.gradle/caches/transforms-3/c1f7cd0e68ddf89c76a753ac7fd1a66c/transformed/jetified-firebase-common-20.2.0/AndroidManifest.xml:29:13-37
+301            android:initOrder="100" />
+301-->[com.google.firebase:firebase-common:20.2.0] /home/umair-liaqat-552/.gradle/caches/transforms-3/c1f7cd0e68ddf89c76a753ac7fd1a66c/transformed/jetified-firebase-common-20.2.0/AndroidManifest.xml:30:13-36
+302
+303        <activity android:name="com.facebook.CustomTabMainActivity" /> <!-- Needs to be explicitly declared on P+ -->
+303-->[com.facebook.android:facebook-common:16.0.0] /home/umair-liaqat-552/.gradle/caches/transforms-3/d880c2e99b8379fb947bce8756210049/transformed/jetified-facebook-common-16.0.0/AndroidManifest.xml:26:9-71
+303-->[com.facebook.android:facebook-common:16.0.0] /home/umair-liaqat-552/.gradle/caches/transforms-3/d880c2e99b8379fb947bce8756210049/transformed/jetified-facebook-common-16.0.0/AndroidManifest.xml:26:19-68
+304        <uses-library
+304-->[com.google.android.gms:play-services-maps:18.1.0] /home/umair-liaqat-552/.gradle/caches/transforms-3/d5e4c04f4690837574f4fd959dc722b7/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:39:9-41:40
+305            android:name="org.apache.http.legacy"
+305-->[com.google.android.gms:play-services-maps:18.1.0] /home/umair-liaqat-552/.gradle/caches/transforms-3/d5e4c04f4690837574f4fd959dc722b7/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:40:13-50
+306            android:required="false" />
+306-->[com.google.android.gms:play-services-maps:18.1.0] /home/umair-liaqat-552/.gradle/caches/transforms-3/d5e4c04f4690837574f4fd959dc722b7/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:41:13-37
+307
+308        <activity
+308-->[com.google.android.gms:play-services-auth:20.4.1] /home/umair-liaqat-552/.gradle/caches/transforms-3/3ef1a337cc5460c89cd7cfde721736d6/transformed/jetified-play-services-auth-20.4.1/AndroidManifest.xml:23:9-27:75
+309            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+309-->[com.google.android.gms:play-services-auth:20.4.1] /home/umair-liaqat-552/.gradle/caches/transforms-3/3ef1a337cc5460c89cd7cfde721736d6/transformed/jetified-play-services-auth-20.4.1/AndroidManifest.xml:24:13-93
+310            android:excludeFromRecents="true"
+310-->[com.google.android.gms:play-services-auth:20.4.1] /home/umair-liaqat-552/.gradle/caches/transforms-3/3ef1a337cc5460c89cd7cfde721736d6/transformed/jetified-play-services-auth-20.4.1/AndroidManifest.xml:25:13-46
+311            android:exported="false"
+311-->[com.google.android.gms:play-services-auth:20.4.1] /home/umair-liaqat-552/.gradle/caches/transforms-3/3ef1a337cc5460c89cd7cfde721736d6/transformed/jetified-play-services-auth-20.4.1/AndroidManifest.xml:26:13-37
+312            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+312-->[com.google.android.gms:play-services-auth:20.4.1] /home/umair-liaqat-552/.gradle/caches/transforms-3/3ef1a337cc5460c89cd7cfde721736d6/transformed/jetified-play-services-auth-20.4.1/AndroidManifest.xml:27:13-72
+313        <!--
+314            Service handling Google Sign-In user revocation. For apps that do not integrate with
+315            Google Sign-In, this service will never be started.
+316        -->
+317        <service
+317-->[com.google.android.gms:play-services-auth:20.4.1] /home/umair-liaqat-552/.gradle/caches/transforms-3/3ef1a337cc5460c89cd7cfde721736d6/transformed/jetified-play-services-auth-20.4.1/AndroidManifest.xml:33:9-37:51
+318            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+318-->[com.google.android.gms:play-services-auth:20.4.1] /home/umair-liaqat-552/.gradle/caches/transforms-3/3ef1a337cc5460c89cd7cfde721736d6/transformed/jetified-play-services-auth-20.4.1/AndroidManifest.xml:34:13-89
+319            android:exported="true"
+319-->[com.google.android.gms:play-services-auth:20.4.1] /home/umair-liaqat-552/.gradle/caches/transforms-3/3ef1a337cc5460c89cd7cfde721736d6/transformed/jetified-play-services-auth-20.4.1/AndroidManifest.xml:35:13-36
+320            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+320-->[com.google.android.gms:play-services-auth:20.4.1] /home/umair-liaqat-552/.gradle/caches/transforms-3/3ef1a337cc5460c89cd7cfde721736d6/transformed/jetified-play-services-auth-20.4.1/AndroidManifest.xml:36:13-107
+321            android:visibleToInstantApps="true" />
+321-->[com.google.android.gms:play-services-auth:20.4.1] /home/umair-liaqat-552/.gradle/caches/transforms-3/3ef1a337cc5460c89cd7cfde721736d6/transformed/jetified-play-services-auth-20.4.1/AndroidManifest.xml:37:13-48
+322
+323        <activity
+323-->[com.google.android.gms:play-services-base:18.1.0] /home/umair-liaqat-552/.gradle/caches/transforms-3/28227dfaf4fb370352c7c3385ec25021/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:20:9-22:45
+324            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+324-->[com.google.android.gms:play-services-base:18.1.0] /home/umair-liaqat-552/.gradle/caches/transforms-3/28227dfaf4fb370352c7c3385ec25021/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:20:19-85
+325            android:exported="false"
+325-->[com.google.android.gms:play-services-base:18.1.0] /home/umair-liaqat-552/.gradle/caches/transforms-3/28227dfaf4fb370352c7c3385ec25021/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:22:19-43
+326            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+326-->[com.google.android.gms:play-services-base:18.1.0] /home/umair-liaqat-552/.gradle/caches/transforms-3/28227dfaf4fb370352c7c3385ec25021/transformed/jetified-play-services-base-18.1.0/AndroidManifest.xml:21:19-78
+327
+328        <meta-data
+328-->[com.google.android.gms:play-services-basement:18.1.0] /home/umair-liaqat-552/.gradle/caches/transforms-3/3ee0f8915dc9bf42c60f3eef0b7bd28a/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:21:9-23:69
+329            android:name="com.google.android.gms.version"
+329-->[com.google.android.gms:play-services-basement:18.1.0] /home/umair-liaqat-552/.gradle/caches/transforms-3/3ee0f8915dc9bf42c60f3eef0b7bd28a/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:22:13-58
+330            android:value="@integer/google_play_services_version" />
+330-->[com.google.android.gms:play-services-basement:18.1.0] /home/umair-liaqat-552/.gradle/caches/transforms-3/3ee0f8915dc9bf42c60f3eef0b7bd28a/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:23:13-66
+331        <!--
+332         The initialization ContentProvider will call FacebookSdk.sdkInitialize automatically
+333         with the application context. This config is merged in with the host app's manifest,
+334         but there can only be one provider with the same authority activated at any given
+335         point; so if the end user has two or more different apps that use Facebook SDK, only the
+336         first one will be able to use the provider. To work around this problem, we use the
+337         following placeholder in the authority to identify each host application as if it was
+338         a completely different provider.
+339        -->
+340        <provider
+340-->[com.facebook.android:facebook-core:16.0.0] /home/umair-liaqat-552/.gradle/caches/transforms-3/4b6b462e2d105328ccf1b6a011f3363f/transformed/jetified-facebook-core-16.0.0/AndroidManifest.xml:29:9-32:40
+341            android:name="com.facebook.internal.FacebookInitProvider"
+341-->[com.facebook.android:facebook-core:16.0.0] /home/umair-liaqat-552/.gradle/caches/transforms-3/4b6b462e2d105328ccf1b6a011f3363f/transformed/jetified-facebook-core-16.0.0/AndroidManifest.xml:30:13-70
+342            android:authorities="com.example.driver_app.FacebookInitProvider"
+342-->[com.facebook.android:facebook-core:16.0.0] /home/umair-liaqat-552/.gradle/caches/transforms-3/4b6b462e2d105328ccf1b6a011f3363f/transformed/jetified-facebook-core-16.0.0/AndroidManifest.xml:31:13-72
+343            android:exported="false" />
+343-->[com.facebook.android:facebook-core:16.0.0] /home/umair-liaqat-552/.gradle/caches/transforms-3/4b6b462e2d105328ccf1b6a011f3363f/transformed/jetified-facebook-core-16.0.0/AndroidManifest.xml:32:13-37
+344
+345        <receiver
+345-->[com.facebook.android:facebook-core:16.0.0] /home/umair-liaqat-552/.gradle/caches/transforms-3/4b6b462e2d105328ccf1b6a011f3363f/transformed/jetified-facebook-core-16.0.0/AndroidManifest.xml:34:9-40:20
+346            android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver"
+346-->[com.facebook.android:facebook-core:16.0.0] /home/umair-liaqat-552/.gradle/caches/transforms-3/4b6b462e2d105328ccf1b6a011f3363f/transformed/jetified-facebook-core-16.0.0/AndroidManifest.xml:35:13-86
+347            android:exported="false" >
+347-->[com.facebook.android:facebook-core:16.0.0] /home/umair-liaqat-552/.gradle/caches/transforms-3/4b6b462e2d105328ccf1b6a011f3363f/transformed/jetified-facebook-core-16.0.0/AndroidManifest.xml:36:13-37
+348            <intent-filter>
+348-->[com.facebook.android:facebook-core:16.0.0] /home/umair-liaqat-552/.gradle/caches/transforms-3/4b6b462e2d105328ccf1b6a011f3363f/transformed/jetified-facebook-core-16.0.0/AndroidManifest.xml:37:13-39:29
+349                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED" />
+349-->[com.facebook.android:facebook-core:16.0.0] /home/umair-liaqat-552/.gradle/caches/transforms-3/4b6b462e2d105328ccf1b6a011f3363f/transformed/jetified-facebook-core-16.0.0/AndroidManifest.xml:38:17-95
+349-->[com.facebook.android:facebook-core:16.0.0] /home/umair-liaqat-552/.gradle/caches/transforms-3/4b6b462e2d105328ccf1b6a011f3363f/transformed/jetified-facebook-core-16.0.0/AndroidManifest.xml:38:25-92
+350            </intent-filter>
+351        </receiver>
+352        <receiver
+352-->[com.facebook.android:facebook-core:16.0.0] /home/umair-liaqat-552/.gradle/caches/transforms-3/4b6b462e2d105328ccf1b6a011f3363f/transformed/jetified-facebook-core-16.0.0/AndroidManifest.xml:41:9-47:20
+353            android:name="com.facebook.AuthenticationTokenManager$CurrentAuthenticationTokenChangedBroadcastReceiver"
+353-->[com.facebook.android:facebook-core:16.0.0] /home/umair-liaqat-552/.gradle/caches/transforms-3/4b6b462e2d105328ccf1b6a011f3363f/transformed/jetified-facebook-core-16.0.0/AndroidManifest.xml:42:13-118
+354            android:exported="false" >
+354-->[com.facebook.android:facebook-core:16.0.0] /home/umair-liaqat-552/.gradle/caches/transforms-3/4b6b462e2d105328ccf1b6a011f3363f/transformed/jetified-facebook-core-16.0.0/AndroidManifest.xml:43:13-37
+355            <intent-filter>
+355-->[com.facebook.android:facebook-core:16.0.0] /home/umair-liaqat-552/.gradle/caches/transforms-3/4b6b462e2d105328ccf1b6a011f3363f/transformed/jetified-facebook-core-16.0.0/AndroidManifest.xml:44:13-46:29
+356                <action android:name="com.facebook.sdk.ACTION_CURRENT_AUTHENTICATION_TOKEN_CHANGED" />
+356-->[com.facebook.android:facebook-core:16.0.0] /home/umair-liaqat-552/.gradle/caches/transforms-3/4b6b462e2d105328ccf1b6a011f3363f/transformed/jetified-facebook-core-16.0.0/AndroidManifest.xml:45:17-103
+356-->[com.facebook.android:facebook-core:16.0.0] /home/umair-liaqat-552/.gradle/caches/transforms-3/4b6b462e2d105328ccf1b6a011f3363f/transformed/jetified-facebook-core-16.0.0/AndroidManifest.xml:45:25-100
+357            </intent-filter>
+358        </receiver>
+359    </application>
+360
+361</manifest>

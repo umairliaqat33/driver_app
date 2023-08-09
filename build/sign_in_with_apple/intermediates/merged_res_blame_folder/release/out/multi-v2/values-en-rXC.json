@@ -1,0 +1,68 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/umair-liaqat-552/StudioProjects/driver_app/build/sign_in_with_apple/intermediates/incremental/mergeReleaseResources/merged.dir/values-en-rXC/values-en-rXC.xml",
+            "map": [
+                {
+                    "source": "/home/umair-liaqat-552/.gradle/caches/transforms-3/2a8e9c7fc4122b6f67617e8aac025b76/transformed/browser-1.2.0/res/values-en-rXC/values-en-rXC.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,256,455,667",
+                        "endColumns": "200,198,211,195",
+                        "endOffsets": "251,450,662,858"
+                    }
+                },
+                {
+                    "source": "/home/umair-liaqat-552/.gradle/caches/transforms-3/aa701b47cec244085d46a1a42fcc7fb9/transformed/core-1.6.0/res/values-en-rXC/values-en-rXC.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "203",
+                        "endOffsets": "254"
+                    },
+                    "to": {
+                        "startLines": "6",
+                        "startColumns": "4",
+                        "startOffsets": "863",
+                        "endColumns": "203",
+                        "endOffsets": "1062"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/home/umair-liaqat-552/StudioProjects/driver_app/build/sign_in_with_apple/intermediates/merged_res/release/values-en-rXC/values-en-rXC.xml",
+            "map": [
+                {
+                    "source": "/home/umair-liaqat-552/.gradle/caches/transforms-3/2a8e9c7fc4122b6f67617e8aac025b76/transformed/browser-1.2.0/res/values-en-rXC/values-en-rXC.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,256,455,667",
+                        "endColumns": "200,198,211,195",
+                        "endOffsets": "251,450,662,858"
+                    }
+                },
+                {
+                    "source": "/home/umair-liaqat-552/.gradle/caches/transforms-3/aa701b47cec244085d46a1a42fcc7fb9/transformed/core-1.6.0/res/values-en-rXC/values-en-rXC.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "203",
+                        "endOffsets": "254"
+                    },
+                    "to": {
+                        "startLines": "6",
+                        "startColumns": "4",
+                        "startOffsets": "863",
+                        "endColumns": "203",
+                        "endOffsets": "1062"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+<lint-module
+    format="1"
+    dir="/home/umair-liaqat-552/StudioProjects/driver_app/android/app"
+    name=":app"
+    type="APP"
+    maven="android:app:"
+    gradle="7.1.2"
+    buildFolder="/home/umair-liaqat-552/StudioProjects/driver_app/build/app"
+    bootClassPath="/home/umair-liaqat-552/Android/Sdk/platforms/android-33/android.jar:/home/umair-liaqat-552/Android/Sdk/build-tools/30.0.3/core-lambda-stubs.jar"
+    javaSourceLevel="1.8"
+    compileTarget="android-33">
+  <lintOptions
+      abortOnError="true"
+      absolutePaths="true"
+      checkReleaseBuilds="true"
+      explainIssues="true"/>
+  <variant name="release"/>
+</lint-module>

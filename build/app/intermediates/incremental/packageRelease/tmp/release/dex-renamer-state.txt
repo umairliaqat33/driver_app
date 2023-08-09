@@ -1,0 +1,4 @@
+#Tue Feb 28 21:29:30 PKT 2023
+base.0=/home/umair-liaqat-552/StudioProjects/driver_app/build/app/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+renamed.0=classes.dex
+path.0=classes.dex
