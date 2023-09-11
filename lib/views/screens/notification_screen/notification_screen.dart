@@ -88,12 +88,12 @@ class NotificationItem extends StatelessWidget {
                     Assets.tickFilled,
                     fit: BoxFit.cover,
                   ))),
-          Padding(
-              padding: const EdgeInsets.only(left: 11.0, top: 2.0),
+          const Padding(
+              padding: EdgeInsets.only(left: 11.0, top: 2.0),
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 crossAxisAlignment: CrossAxisAlignment.start,
-                children: const [
+                children: [
                   Text(
                     "Your ride started",
                     style: TextStyle(
